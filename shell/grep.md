@@ -4,7 +4,7 @@
 
 ## Fundamentals
 
-Find string inside an specific file:
+Find string inside a specific file:
 
 ```bash
 grep "Abner Castro" info.txt
@@ -55,3 +55,10 @@ Now you should be able to use all regular expressions.
 
 - `.` matches **any** character
 - `\d{}` matches a **digit**, but you need to use `-P` option
+
+## Source
+
+[A Beginner’s Guide to Grep: Basics and Regular Expressions](https://opensourceforu.com/2012/06/beginners-guide-gnu-grep-basics/)
+
+[Corey Schafer's YouTube Channel: Linux/Mac Terminal Tutorial: The Grep Command](https://www.youtube.com/watch?v=VGgTmxXp7xQ&feature=youtu.be&list=PL-osiE80TeTvGhHkpvfmKWOiIPF8UVy6c)
+
