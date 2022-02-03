@@ -51,10 +51,28 @@ brew install grep
 
 And now use `ggrep` to use GNU version. To use that version as default, pass `--with-default-names` when installing.
 
-Now you should be able to use all regular expressions.
+Now you should be able to use all regular expressions. Add `-E` to use repetition operators effectively.
 
 - `.` matches **any** character
 - `\d{}` matches a **digit**, but you need to use `-P` option
+- `?` means the preceding item is **optional** and will be matched once if found
+- `*` means that the preceding item will be matched **zero or more times**
+- `+` means that the preceding item will be matched **one or more times**
+- `{n}` means the preceding item is matched exactly *n* times, while `{n,}` means the item is matched *n* or more times. `{n,m}` means that the preceding item is matched at least *n*times, but not more than *m* times. `{,m}` means that the preceding item is matched, at the most, *m* times.
+
+### Character Classes
+
+* `[aeiou]` is a **list** of characters to match
+* `[m-t]` is a **range** of characters to match
+* You may add `{n,m}` to a list or range
+
+#### Famous Character Classes
+
+* `[:lower:]` class of lower-case alphabet letters: `[a-z]`
+* `[:upper:]` class of upper-case alphabet letters: `[A-Z]`
+* `[:alpha:]` class of all alphabetic characters (lower+upper case)
+* `[:digit:]` class of 0 to 9 digits
+* `[:alnum:]` is a combination of *alpha* and *digit* classes
 
 ## Source
 
